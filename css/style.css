@@ -1,0 +1,129 @@
+:root {
+  --color-pale-violet: hsl(276, 100%, 81%);
+  --color-moderate-violet: hsl(276, 55%, 52%);
+  --color-desaturated-dark-violet: hsl(271, 15%, 43%);
+  --color-grayish-blue: hsl(206, 6%, 79%);
+  --color-very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --color-dark-grayish-violet: hsl(270, 7%, 64%);
+  --color-light-magenta: hsl(293, 100%, 63%);
+  --color-light-violet: hsl(264, 100%, 61%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-grayish-violet: hsl(270, 20%, 96%);
+  --color-light-magenta: hsl(289, 100%, 72%);
+  --linear-gradient: linear-gradient(
+    to bottom left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+}
+body::before {
+  content: "";
+  width: 30%;
+  height: 130%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  background-image: var(--linear-gradient);
+  border-radius: 100rem;
+  left: -5%;
+  top: -40%;
+}
+body::after {
+  content: "";
+  width: 30%;
+  height: 130%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  background-color: hsl(270deg, 20%, 96%);
+  border-radius: 100rem;
+  right: -5%;
+  bottom: -40%;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  width: min(90%, 90rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__app {
+  width: 45%;
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 3rem;
+}
+.main__app-container {
+  background-color: var(--color-light-grayish-violet);
+  border-radius: 2rem;
+}
+.main__app-header {
+  background-image: var(--linear-gradient);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+}
+.main__app-header-arrow {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--color-white);
+}
+.main__app-header-profile-box {
+  display: flex;
+  align-items: center;
+}
+.main__app-header-photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  overflow: hidden;
+}
+.main__text {
+  width: 50%;
+}
+
+.heading--1 {
+  color: var(--color-very-dark-desaturated-violet);
+  font-size: 4rem;
+  font-weight: 500;
+}
+.heading--4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */
