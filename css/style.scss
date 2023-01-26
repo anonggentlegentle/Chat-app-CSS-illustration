@@ -40,6 +40,7 @@ body {
   position: relative;
   font-size: 1.6rem;
   background-color: var(--color-light-grayish-violet);
+  overflow: hidden;
 
   display: grid;
   place-items: center;
@@ -80,14 +81,14 @@ video {
 }
 
 .main {
-  width: min(90%, 90rem);
+  width: min(90%, 87rem);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &__app {
-    width: 45%;
+    width: 38rem;
     background-color: var(--color-white);
     padding: 1rem;
     border-radius: 3rem;
@@ -115,7 +116,7 @@ video {
       content: "";
       background-color: var(--color-white);
       position: absolute;
-      width: 21.5rem;
+      width: 22.75rem;
       height: 5rem;
       display: block;
       border-radius: 1.5rem;
@@ -126,7 +127,7 @@ video {
   }
 
   &__app-header-arrow {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-decoration: none;
     color: var(--color-white);
   }
@@ -291,6 +292,50 @@ video {
 
   &__chat-radio-price {
     margin-left: auto;
+  }
+
+  &__chat-message-input-box {
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 100rem;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__chat-message-text {
+    border: none;
+    width: 100%;
+    margin-left: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-family: "Rubik", sans-serif;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-grayish-blue);
+    }
+  }
+
+  &__chat-submit-btn {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--color-very-dark-desaturated-violet);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
