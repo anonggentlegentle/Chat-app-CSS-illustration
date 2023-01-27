@@ -28,140 +28,128 @@
   </head>
   <body>
     <main class="main">
-      <section class="main__app">
-        <div class="main__app-container">
-          <div class="main__app-header">
-            <a href="#" class="main__app-header-arrow"
-              ><i class="fa-solid fa-angle-left"></i
-            ></a>
-
-            <div class="main__app-header-profile-box">
-              <div class="main__app-header-photo">
-                <img
-                  src="images/avatar.jpg"
-                  alt="Avatar"
-                  class="main__app-header-img"
-                />
+      <section class="main__content">
+        <section class="main__app">
+          <div class="main__app-container">
+            <div class="main__app-header">
+              <a href="#" class="main__app-header-arrow"
+                ><i class="fa-solid fa-angle-left"></i
+              ></a>
+              <div class="main__app-header-profile-box">
+                <div class="main__app-header-photo">
+                  <img
+                    src="images/avatar.jpg"
+                    alt="Avatar"
+                    class="main__app-header-img"
+                  />
+                </div>
+                <div class="main__app-header-profile">
+                  <h4 class="heading heading--4 main__app-header-name">
+                    Samuel Green
+                  </h4>
+                  <p class="main__app-header-status">Available to walk</p>
+                </div>
               </div>
-              <div class="main__app-header-profile">
-                <h4 class="heading heading--4 main__app-header-name">
-                  Samuel Green
-                </h4>
-                <p class="main__app-header-status">Available to walk</p>
+              <div class="main__app-header-circle-box">
+                <div class="main__app-header-circle">&nbsp;</div>
+                <div class="main__app-header-circle">&nbsp;</div>
+                <div class="main__app-header-circle">&nbsp;</div>
               </div>
             </div>
-
-            <div class="main__app-header-circle-box">
-              <div class="main__app-header-circle">&nbsp;</div>
-              <div class="main__app-header-circle">&nbsp;</div>
-              <div class="main__app-header-circle">&nbsp;</div>
+            <div class="main__app-main-chat">
+              <p class="main__chat-text-received">
+                That sounds great. I’d be happy with that.
+              </p>
+              <p class="main__chat-text-received">
+                Could you send over some pictures of your dog, please?
+              </p>
+              <div class="main__chat-photos-box">
+                <div class="main__chat-photo">
+                  <img
+                    src="images/dog-image-1.jpg"
+                    alt="Sent image"
+                    class="main__chat-img"
+                  />
+                </div>
+                <div class="main__chat-photo">
+                  <img
+                    src="images/dog-image-2.jpg"
+                    alt="Sent image"
+                    class="main__chat-img"
+                  />
+                </div>
+                <div class="main__chat-photo">
+                  <img
+                    src="images/dog-image-3.jpg"
+                    alt="Sent image"
+                    class="main__chat-img"
+                  />
+                </div>
+              </div>
+              <p class="main__chat-text-sent">
+                Here are a few pictures. She’s a happy girl!
+              </p>
+              <p class="main__chat-text-sent main__chat-text-sent--1">
+                Can you make it?
+              </p>
+              <p class="main__chat-text-received">
+                She looks so happy! The time we discussed works. How long shall I
+                take her out for?
+              </p>
+              <form action="#" class="main__chat-form">
+                <div class="main__chat-form-container">
+                  <input
+                    type="radio"
+                    class="main__chat-radio main__chat-radio--1"
+                    id="main__chat-radio--1"
+                    name="radio"
+                  />
+                  <label
+                    for="main__chat-radio--1"
+                    class="main__chat-radio-label main__chat-radio-label--1"
+                  >
+                    <div class="main__chat-radio-styled">
+                      <div class="main__chat-radio-active">&nbsp;</div>
+                    </div>
+                    <p class="main__chat-radio-desc">30 minute walk</p>
+                    <h3 class="heading heading--3 main__chat-radio-price">$29</h3>
+                  </label>
+                </div>
+                <div class="main__chat-form-container">
+                  <input
+                    type="radio"
+                    class="main__chat-radio main__chat-radio--2"
+                    id="main__chat-radio--2"
+                    name="radio"
+                  />
+                  <label
+                    for="main__chat-radio--2"
+                    class="main__chat-radio-label main__chat-radio-label--2"
+                  >
+                    <div class="main__chat-radio-styled">
+                      <div class="main__chat-radio-active">&nbsp;</div>
+                    </div>
+                    <p class="main__chat-radio-desc">1 hour walk</p>
+                    <h3 class="heading heading--3 main__chat-radio-price">$49</h3>
+                  </label>
+                </div>
+              </form>
+              <form action="#" class="main__chat-message-input-box">
+                <input type="text" class="main__chat-message-text" placeholder="Type a message..." />
+                <button type="submit" class="main__chat-submit-btn" /><i class="fa-solid fa-angle-right"></i></button>
+              </form>
             </div>
           </div>
-
-          <div class="main__app-main-chat">
-            <p class="main__chat-text-received">
-              That sounds great. I’d be happy with that.
-            </p>
-
-            <p class="main__chat-text-received">
-              Could you send over some pictures of your dog, please?
-            </p>
-
-            <div class="main__chat-photos-box">
-              <div class="main__chat-photo">
-                <img
-                  src="images/dog-image-1.jpg"
-                  alt="Sent image"
-                  class="main__chat-img"
-                />
-              </div>
-
-              <div class="main__chat-photo">
-                <img
-                  src="images/dog-image-2.jpg"
-                  alt="Sent image"
-                  class="main__chat-img"
-                />
-              </div>
-
-              <div class="main__chat-photo">
-                <img
-                  src="images/dog-image-3.jpg"
-                  alt="Sent image"
-                  class="main__chat-img"
-                />
-              </div>
-            </div>
-
-            <p class="main__chat-text-sent">
-              Here are a few pictures. She’s a happy girl!
-            </p>
-
-            <p class="main__chat-text-sent main__chat-text-sent--1">
-              Can you make it?
-            </p>
-
-            <p class="main__chat-text-received">
-              She looks so happy! The time we discussed works. How long shall I
-              take her out for?
-            </p>
-
-            <form action="#" class="main__chat-form">
-              <div class="main__chat-form-container">
-                <input
-                  type="radio"
-                  class="main__chat-radio main__chat-radio--1"
-                  id="main__chat-radio--1"
-                  name="radio"
-                />
-                <label
-                  for="main__chat-radio--1"
-                  class="main__chat-radio-label main__chat-radio-label--1"
-                >
-                  <div class="main__chat-radio-styled">
-                    <div class="main__chat-radio-active">&nbsp;</div>
-                  </div>
-                  <p class="main__chat-radio-desc">30 minute walk</p>
-                  <h3 class="heading heading--3 main__chat-radio-price">$29</h3>
-                </label>
-              </div>
-
-              <div class="main__chat-form-container">
-                <input
-                  type="radio"
-                  class="main__chat-radio main__chat-radio--2"
-                  id="main__chat-radio--2"
-                  name="radio"
-                />
-                <label
-                  for="main__chat-radio--2"
-                  class="main__chat-radio-label main__chat-radio-label--2"
-                >
-                  <div class="main__chat-radio-styled">
-                    <div class="main__chat-radio-active">&nbsp;</div>
-                  </div>
-                  <p class="main__chat-radio-desc">1 hour walk</p>
-                  <h3 class="heading heading--3 main__chat-radio-price">$49</h3>
-                </label>
-              </div>
-            </form>
-
-            <form action="#" class="main__chat-message-input-box">
-              <input type="text" class="main__chat-message-text" placeholder="Type a message..." />
-              <button type="submit" class="main__chat-submit-btn" /><i class="fa-solid fa-angle-right"></i></button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <section class="main__text">
-        <h1 class="heading heading--1">Simple booking</h1>
-        <p class="main__paragraph">
-          Stay in touch with our dog walkers through the chat interface. This
-          makes it easy to discuss arrangements and make bookings. Once the walk
-          has been completed you can rate your walker and book again all through
-          the chat.
-        </p>
+        </section>
+        <section class="main__text">
+          <h1 class="heading heading--1">Simple booking</h1>
+          <p class="main__paragraph">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the walk
+            has been completed you can rate your walker and book again all through
+            the chat.
+          </p>
+        </section>
       </section>
     </main>
   </body>
