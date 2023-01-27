@@ -18,6 +18,9 @@
   );
 }
 
+$bp-1: 56.25em; // 900px
+$bp-2: 31.25em; // 500px
+
 *,
 *::after,
 *::before {
@@ -30,6 +33,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   color-scheme: dark light;
+
+  @media only screen and (max-width: $bp-2) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -45,6 +52,10 @@ body {
   display: grid;
   place-items: center;
 
+  @media only screen and (max-width: $bp-1) {
+    overflow: auto;
+  }
+
   &::before {
     content: "";
     width: 30%;
@@ -56,12 +67,20 @@ body {
     border-radius: 100rem;
     left: -5%;
     top: -40%;
+
+    @media only screen and (max-width: $bp-1) {
+      top: -80%;
+    }
+
+    @media only screen and (max-width: $bp-2) {
+      left: -5.5%;
+    }
   }
 
   &::after {
     content: "";
     width: 30%;
-    height: 130%;
+    height: 100%;
     display: block;
     position: absolute;
     z-index: -1;
@@ -69,6 +88,10 @@ body {
     border-radius: 100rem;
     right: -5%;
     bottom: -40%;
+
+    @media only screen and (max-width: $bp-1) {
+      display: none;
+    }
   }
 }
 
@@ -86,6 +109,14 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: $bp-1) {
+    margin: 5rem 1rem;
+
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5rem;
+  }
 
   &__app {
     width: 38rem;
@@ -172,6 +203,16 @@ video {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+
+    @media only screen and (max-width: $bp-1) {
+      text-align: center;
+      width: 65%;
+    }
+
+    @media only screen and (max-width: $bp-2) {
+      font-size: 2rem;
+      width: 100%;
+    }
   }
 
   &__paragraph {
@@ -344,6 +385,10 @@ video {
     color: var(--color-very-dark-desaturated-violet);
     font-size: 4rem;
     font-weight: 500;
+
+    @media only screen and (max-width: $bp-2) {
+      font-size: 5rem;
+    }
   }
 
   &--4 {
